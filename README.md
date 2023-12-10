@@ -18,9 +18,15 @@ Accessing VNC running in GitPod via a VNC Client.
    ```
    ./startup.bash
    ```
-   This command waits for the servers to start and then gives in structions for connecting via noVNC and VNC.
+   This command waits for the servers to start and then gives instructions for connecting via noVNC and VNC.
 8. When done, in the GitPod terminal:
    ```
    gp stop
    ```
    Or use the GitPod Dashboard.
+
+Open Questions:
+- Is there a convenient way to start an existing Workspace? (e.g. like the "Open in GitPod" button above?)
+  - I.e. how do we prevent the mistake of creating a new workspace every time?
+- Does the server timeout if left idle?  If so how long?
+  - I.e. will it happen mid work if someone take a bathroom break?
