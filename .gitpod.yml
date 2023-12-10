@@ -1,1 +1,9 @@
 image: braughtg/vnc-novnc-base:1.2.1
+
+ports:
+    - name: noVNC
+      port: 6901
+      onOpen: notify
+    - name: VNC
+      port: 5901
+      onOpen: notify
