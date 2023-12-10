@@ -27,7 +27,7 @@ Accessing VNC running in GitPod via a VNC Client.
 
 ## Notes:
 - Content in the Linux desktop is preserved across workspace stops and starts.
-  - i.e. Everyting done in GitKit will be saved between workspace sessions.
+  - i.e. Everyting done in GitKit is saved between workspace sessions.
     - Apparently GitPod preserves docker volumes for us automatically!
  
 ## Open Questions:
