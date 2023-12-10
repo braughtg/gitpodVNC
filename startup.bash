@@ -6,7 +6,7 @@ gp ports await 6901 > /dev/null
 echo "Started."
 
 echo "Connect to the noVNC server at:"
-gh url 6901
+gp url 6901
 echo ""
 echo "OR"
 echo ""
