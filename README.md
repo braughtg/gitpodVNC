@@ -35,3 +35,4 @@ Accessing VNC running in GitPod via a VNC Client.
   - I.e. how do we prevent the mistake of creating a new workspace every time?
 - Does the server timeout if left idle?  If so how long?
   - I.e. will it happen mid work if someone take a bathroom break?
+- Is it a problem that each new workspace creates a new "known host" for ssh?
