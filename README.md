@@ -21,7 +21,7 @@ Accessing VNC running in GitPod via a VNC Client.
 7. Can also access via a VNC client.
    - Use `gp ssh` in GitPod terminal to get the ssh URL.
    - Use the ssh URL to connect from the local machine:
-   ```
-   ssh -L 5901:localhost:5901 <ssh URL>
-   ```
+     ```
+     ssh -L 5901:localhost:5901 <ssh URL>
+     ```
    - Connect to `localhost:5901` using the VNC client.
