@@ -41,3 +41,4 @@ Accessing VNC running in GitPod via a VNC Client.
   - Can be listed in `.gitpod.yml` to start it instead of the terminal image. 
   - This would eliminate the step of having them run `./startup.bash` in the GitPod terminal.
   - Should be a pretty simple thing to do.
+    - Could even do it with a Dockerfile here and let GitPod do the build for us :) 
