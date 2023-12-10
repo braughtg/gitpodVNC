@@ -25,7 +25,12 @@ Accessing VNC running in GitPod via a VNC Client.
    ```
    Or use the GitPod Dashboard.
 
-Open Questions:
+## Notes:
+- Content in the Linux desktop is preserved across workspace stops and starts.
+  - i.e. Everyting done in GitKit will be saved between workspace sessions.
+    - Apparently GitPod preserves docker volumes for us automatically!
+ 
+## Open Questions:
 - Is there a convenient way to start an existing Workspace? (e.g. like the "Open in GitPod" button above?)
   - I.e. how do we prevent the mistake of creating a new workspace every time?
 - Does the server timeout if left idle?  If so how long?
