@@ -44,3 +44,4 @@ Accessing VNC running in GitPod via a VNC Client.
     - Could even do it with a Dockerfile here and let GitPod do the build for us :)
     - https://www.gitpod.io/docs/configure/workspaces/workspace-image#using-a-custom-dockerfile
     - This would let us trim the image down quite a bit too since we can start from `gitpod/workspace-base` instead of `gitpod/workspace-full`
+- Would it make sense to eventually build the linux KitClient on the `gitpod/worspace-full-vnc` image instead?
