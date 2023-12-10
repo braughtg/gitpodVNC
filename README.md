@@ -6,8 +6,8 @@ Accessing VNC running in GitPod via a VNC Client.
     ```
     ssh-keygen -t ed25519
     ```
-2. Copy contents of public key file (typically `~/.ssh/id_ed25519.pub`
-3. Add "New SSH" key in GitPod User Settings.
+2. Copy contents of public SSH key file (typically `~/.ssh/id_ed25519.pub`
+3. Add "New SSH" key in GitPod User Settings and paste in the public SSH key.
 4. Create new GitPod workspace for `https://github.com/braughtg/gitpodvnc` using "Terminal"
    - Can probably point this at GitKit also and just adjust the commands below.
 5. In the GitPod terminal:
