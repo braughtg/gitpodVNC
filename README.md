@@ -12,17 +12,15 @@ Accessing VNC running in GitPod via a VNC Client.
 
    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/braughtg/gitpodVNC)
 
-6. Choose "Terminal" in the "Editor/Browser" dropdown (the middle one).
-7. Click "Contine"
-8. In the GitPod terminal:
+5. Choose "Terminal" in the "Editor/Browser" dropdown (the middle one).
+6. Click "Contine"
+7. In the GitPod terminal:
    ```
-   gp ports await 5901
+   ./startup.bash
    ```
-9. The noVNC server should be accessible from the local machine by clicking the URL for the 6901 port.
-10. Can also access via a VNC client.
-   - Use `gp ssh` in GitPod terminal to get the ssh URL.
-   - Use the ssh URL to connect from the local machine:
-     ```
-     ssh -L 5901:localhost:5901 <ssh URL>
-     ```
-   - Connect to `localhost:5901` using the VNC client.
+   This command waits for the servers to start and then gives in structions for connecting via noVNC and VNC.
+8. When done, in the GitPod terminal:
+   ```
+   gp stop
+   ```
+   Or use the GitPod Dashboard.
