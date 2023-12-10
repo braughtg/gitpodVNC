@@ -4,8 +4,9 @@ echo "Waiting for VNC/noVNC servers to start..."
 gp ports await 5901 > /dev/null
 gp ports await 6901 > /dev/null
 echo "Started."
+echo ""
 
-echo "Connect to the noVNC server at:"
+echo "Connect to the noVNC server with your browser at:"
 gp url 6901
 echo ""
 echo "OR"
