@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Waiting for VNC/noVNC servers to start..."
-gp port await 5901
-gp port await 6901
+gp ports await 5901 > /dev/null
+gp ports await 6901 > /dev/null
 echo "Started."
 
 echo "The SSH URL is:"
