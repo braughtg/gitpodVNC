@@ -14,12 +14,12 @@ Accessing VNC running in GitPod via a VNC Client.
 
 5. Choose "Terminal" in the "Editor/Browser" dropdown (the middle one).
 6. Click "Contine"
-7. In the GitPod terminal:
+7. In the GitPod terminal in the browser:
    ```
    ./startup.bash
    ```
    This command waits for the servers to start and then gives instructions for connecting via noVNC and VNC.
-8. When done, in the GitPod terminal:
+8. When done, in the GitPod terminal in the browser:
    ```
    gp stop
    ```
@@ -35,4 +35,9 @@ Accessing VNC running in GitPod via a VNC Client.
   - I.e. how do we prevent the mistake of creating a new workspace every time?
 - Does the server timeout if left idle?  If so how long?
   - I.e. will it happen mid work if someone take a bathroom break?
+- How do we keep students from burning up their free credits?
 - Is it a problem that each new workspace creates a new "known host" for ssh?
+- Should we create a custom image that just does what `startup.bash` does?
+  - Can be listed in `.gitpod.yml` to start it instead of the terminal image. 
+  - This would eliminate the step of having them run `./startup.bash` in the GitPod terminal.
+  - Should be a pretty simple thing to do.
