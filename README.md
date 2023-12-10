@@ -13,7 +13,8 @@ Accessing VNC running in GitPod via a VNC Client.
    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/braughtg/gitpodVNC)
 
 6. Choose "Terminal" in the "Editor/Browser" dropdown (the middle one).
-7. In the GitPod terminal:
+7. Click "Contine"
+8. In the GitPod terminal:
    ```
    gp ports await 5901
    ```
