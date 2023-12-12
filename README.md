@@ -24,24 +24,3 @@ Accessing VNC running in GitPod via a VNC Client.
    gp stop
    ```
    Or use the GitPod Dashboard.
-
-## Notes:
-- Content in the Linux desktop is preserved across workspace stops and starts.
-  - i.e. Everyting done in GitKit is saved between workspace sessions.
-    - Apparently GitPod preserves docker volumes for us automatically!
- 
-## Open Questions:
-- Is there a convenient way to start an existing Workspace? (e.g. like the "Open in GitPod" button above?)
-  - I.e. how do we prevent the mistake of creating a new workspace every time?
-- Does the server timeout if left idle?  If so how long?
-  - I.e. will it happen mid work if someone take a bathroom break?
-- How do we keep students from burning up their free credits?
-- Is it a problem that each new workspace creates a new "known host" for ssh?
-- Should we create a custom image that just does what `startup.bash` does?
-  - Can be listed in `.gitpod.yml` to start it instead of the terminal image. 
-  - This would eliminate the step of having them run `./startup.bash` in the GitPod terminal.
-  - Should be a pretty simple thing to do.
-    - Could even do it with a Dockerfile here and let GitPod do the build for us :)
-    - https://www.gitpod.io/docs/configure/workspaces/workspace-image#using-a-custom-dockerfile
-    - This would let us trim the image down quite a bit too since we can start from `gitpod/workspace-base` instead of `gitpod/workspace-full`
-- Would it make sense to eventually build the linux KitClient on the `gitpod/worspace-full-vnc` image instead?
