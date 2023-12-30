@@ -1,6 +1,6 @@
 tasks:
     - name: Seed bashrc
-      command: echo "./startup.bash" >> ~/.bashrc
+      command: echo "./startup.bash" >> ~/.bash_profile
     - name: Launch VNC Image
       init: docker pull braughtg/vnc-novnc-base:1.2.1
       command: |
