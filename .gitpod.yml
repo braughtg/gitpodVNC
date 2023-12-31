@@ -7,5 +7,5 @@ tasks:
           docker start vnc
     - name: Wait for VNC
       command: |
-        gp tasks attach
+        echo "waiting for startup..."
         ./startup.bash
