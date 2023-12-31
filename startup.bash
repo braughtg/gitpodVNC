@@ -8,10 +8,10 @@
 #           docker create --name vnc --publish 5901:5901 --publish 6901:6901 braughtg/vnc-novnc-base:1.2.1
 #           docker start vnc
 
-# Wait here for the task init has pulled the image...
 IMAGE_PULLED=""
 if [ -z "$IMAGE_PULLED" ];
 then
+    docker pull braughtg/vnc-novnc-base:1.2.1 &
     echo -n "Waiting for VNC/noVNC image to be pulled..."
     while [ -z "$IMAGE_PULLED" ]
     do

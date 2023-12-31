@@ -1,5 +1,2 @@
 image:
     file: .gitpod.Dockerfile
-tasks:
-    - name: Pull VNC Image
-      init: docker pull braughtg/vnc-novnc-base:1.2.1
