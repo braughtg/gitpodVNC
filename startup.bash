@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 echo "Waiting for VNC/noVNC servers to start..."
 gp ports await 5901 > /dev/null
