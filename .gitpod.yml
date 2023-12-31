@@ -1,6 +1,6 @@
 tasks:
     - name: Test
-      before: echo "./startup.bash" >> ~/.bashrc
+      before: echo "./startup.bash" >> ~/.bash-aliases
     - name: Launch VNC Image
       init: docker pull braughtg/vnc-novnc-base:1.2.1
       command: |
