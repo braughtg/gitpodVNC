@@ -1,13 +1,3 @@
-#!/bin/bash
-
-# tasks:
-#     - name: Launch VNC Image
-#       init: docker pull braughtg/vnc-novnc-base:1.2.1
-#       before: gp env TASK_STARTED=1
-#       command: |
-#           docker create --name vnc --publish 5901:5901 --publish 6901:6901 braughtg/vnc-novnc-base:1.2.1
-#           docker start vnc
-
 IMAGE_PULLED=$(docker image ls | tail -n +2)
 if [ -z "$IMAGE_PULLED" ];
 then
